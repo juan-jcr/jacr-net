@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JacrNet</title>
+    <!--=====CSS=====-->
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-   
+      <!--=====NAVBAR=====-->
+    <nav class="shadow-md flex justify-between items-center py-4">
+        <!--=====LOGO=====-->
+        <div class="ml-4 flex gap-2">
+          <a href="#" class="text-lg font-bold text-gray-800">
+            <img src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Logo" class="h-8 w-8">
+          </a>
+          <a class="text-xl font-bold text-gray-800" href="#">JacrNet</a>
+        </div>
+      
+        <!--======= Perfil con dropdown =======-->
+        <div class="relative mr-4">
+          <button  id="dropdownButton" class="flex items-center text-gray-600 hover:text-gray-900">
+            <img src="../public/perfil.jpeg" alt="Perfil" class="h-8 w-8 rounded-full">
+            <span class="ml-2 text-sm">Juan Castañeda</span>
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+      
+          <!--====== Dropdown ========-->
+          <div id="dropdownMenu" class="absolute right-0 mt-2 w-48 bg-white rounded shadow-md hidden">
+            <ul class="list-none mb-0">
+              <li><a href="#" class="block py-2 px-4 text-sm text-gray-600 hover:text-gray-900">Opción 1</a></li>
+              <li><a href="#" class="block py-2 px-4 text-sm text-gray-600 hover:text-gray-900">Opción 2</a></li>
+              <li><a href="#" class="block py-2 px-4 text-sm text-gray-600 hover:text-gray-900">Opción 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     
-    
+    <script src="./js/script.js"></script>
 </body>
 </html>
