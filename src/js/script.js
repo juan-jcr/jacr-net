@@ -1,17 +1,20 @@
+//drawdown
 const dropdownButton = document.getElementById('dropdownButton');
 const dropdownMenu = document.getElementById('dropdownMenu');
 
+//mostrar menu
 const btnBars = document.getElementById('btnBars');
 const aside = document.getElementById('aside');
 const btnCloseAside = document.getElementById('btnCloseAside');
 
-
+//darkmode
 const toggleButton = document.getElementById('dark-mode-toggle');
 const bodyElement = document.documentElement;
 const sunIcon = document.getElementById('sun-icon');
-//const moonIcon = document.getElementById('moon-icon');
 
+// Verificar si el usuario ya tiene una preferencia almacenada
 const currentTheme = localStorage.getItem('theme');
+
 
 if (currentTheme === 'dark') {
   bodyElement.classList.add('dark');
@@ -20,7 +23,7 @@ if (currentTheme === 'dark') {
   bodyElement.classList.remove('dark');
   sunIcon.classList.add('text-yellow-500');
 }
-
+// Cambiar entre el modo claro y oscuro
 toggleButton.addEventListener('click', () => {
   const isDarkMode = bodyElement.classList.toggle('dark');
   if (isDarkMode) {
@@ -32,7 +35,7 @@ toggleButton.addEventListener('click', () => {
   }
 });
 
-//Click en el perfil para mostrar o cerrar  dropdown dle menu
+//Click en el perfil para mostrar o cerrar  dropdown del menu
 dropdownButton.addEventListener('click', function() {
     dropdownMenu.classList.toggle('hidden');
 });

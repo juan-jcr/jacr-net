@@ -10,16 +10,14 @@
 </head>
 
 <body class="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-fondo">
-  <!--=====NAVBAR=====-->
-  <nav  class="shadow-md flex justify-between items-center py-4 mb-6 dark:bg-negro">
-    
+  <!--=====HEADER=====-->
+  <nav  class="shadow-md flex justify-between items-center py-4 mb-6 dark:bg-negro ">
     <div class="ml-4 flex gap-2">
-      <a   href="#" class="text-lg font-bold text-gray-800 sm:hidden">
+      <a   href="#" class="text-lg font-bold text-negro dark:text-white sm:hidden">
         <i id="btnBars" class="fa-solid fa-bars"></i>
       </a>
       <a class="text-md font-bold text-azul  tracking-[1px] sm:tracking-[3px]  sm:text-2xl " href="#">JacrNet</a>
     </div>
-
     <button id="dark-mode-toggle" class="px-4  bg-gray-300 dark:bg-gray-700  rounded-full">
       <i id="sun-icon" class="fas fa-sun text-yellow-500 "></i>
     </button>
@@ -36,18 +34,19 @@
       
       <div id="dropdownMenu" class="absolute right-0 mt-2 w-48 bg-white rounded shadow-md hidden">
         <ul class="list-none mb-0">
-          <li><a href="#" class="block py-2 px-4 text-sm text-gray-600 hover:text-gray-900">Opción 1</a></li>
-          <li><a href="#" class="block py-2 px-4 text-sm text-gray-600 hover:text-gray-900">Opción 2</a></li>
-          <li><a href="#" class="block py-2 px-4 text-sm text-gray-600 hover:text-gray-900">Opción 3</a></li>
+          <li><a href="#" class="block py-2 px-4 text-sm text-gray-600 hover:text-gray-900">Perfil</a></li>
+          <li><a href="#" class="block py-2 px-4 text-sm text-gray-600 hover:text-gray-900">Configuración</a></li>
+          <li><a href="#" class="block py-2 px-4 text-sm text-gray-600 hover:text-gray-900">Salir</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
+ <!--=====MAIN=====-->
   <main class="flex gap-6 p-3">
+    <!--=====SIDEBAR=====-->
    <aside id="aside" 
-  class="fixed bg-black w-64 h-full  top-0 left-0 z-40 transition-transform hidden sm:block sm:relative 
-   sm:bg-white  sm:border sm:rounded-xl sm:h-96 sm:dark:bg-negro sm:dark:border-none ">
+  class="fixed bg-black w-64 h-full  top-0 left-0 z-50   hidden  sm:block sm:relative 
+   sm:bg-white  sm:border sm:rounded-xl  sm:h-[500px] sm:dark:bg-negro sm:dark:border-none ">
 
     <div class="sm:hidden">
       <i id="btnCloseAside" class="text-white absolute left-56 top-3 cursor-pointer sm:hidden fa-solid fa-xmark"></i>
@@ -56,86 +55,88 @@
       <ul class="space-y-4 font-medium">
         <li>
            <a href="#"
-           class="flex items-center rounded-lg p-2 text-blanco sm:text-negro border-azul border-2  dark:text-blanco  hover:text-negro hover:bg-azul  group">
+           class="flex items-center rounded-lg p-2 text-blanco sm:text-negro border-azul border-2  dark:text-blanco  hover:text-negro hover:bg-azul  transition-colors">
               <i class="w-5 h-5 duration-75 fa-solid fa-house"></i>
               <span class="ms-3">Home</span>
            </a>
         </li>
         <li>
-         <a href="#" class="flex items-center rounded-lg p-2 text-blanco sm:text-negro  dark:text-blanco hover:text-negro hover:bg-azul group">
+         <a href="#" class="flex items-center rounded-lg p-2 text-blanco sm:text-negro  dark:text-blanco hover:text-negro hover:bg-azul transition-colors">
             <i class="w-5 h-5 duration-75 fa-solid fa-cart-shopping"></i>
             <span class="ms-3">Movimientos</span>
          </a>
       </li>
       <li>
-         <a href="#" class="flex items-center rounded-lg p-2 text-blanco sm:text-negro dark:text-blanco hover:text-negro hover:bg-azul group">
+         <a href="#" class="flex items-center rounded-lg p-2 text-blanco sm:text-negro dark:text-blanco hover:text-negro hover:bg-azul transition-colors">
             <i class="w-5 h-5 duration-75 fa-solid fa-house"></i>
             <span class="ms-3">Cuentas</span>
          </a>
       </li>
       <li>
-         <a href="#" class="flex items-center rounded-lg p-2 text-blanco sm:text-negro dark:text-blanco hover:text-negro hover:bg-azul group">
+         <a href="#" class="flex items-center rounded-lg p-2 text-blanco sm:text-negro dark:text-blanco hover:text-negro hover:bg-azul transition-colors">
             <i class="w-5 h-5 fa-solid duration-75 fa-user-group"></i>
             <span class="ms-3">Clientes</span>
          </a>
       </li>
       <li>
-         <a href="#" class="flex items-center rounded-lg p-2 text-blanco sm:text-negro dark:text-blanco hover:text-negro hover:bg-azul group">
+         <a href="#" class="flex items-center rounded-lg p-2 text-blanco sm:text-negro dark:text-blanco hover:text-negro hover:bg-azul transition-colors">
             <i class="w-5 h-5 duration-75 fa-solid fa-handshake-angle"></i>
             <span class="ms-3">Servicios</span>
          </a>
       </li>
-       
      </ul> 
     </div>
    </aside>
+   
    <div class="w-full p-4  border rounded-xl dark:bg-negro dark:border-none">
       <div class="p-5 h-48 mb-4 rounded    ">
          <p class="text-2xl sm:text-4xl text-negro dark:text-blanco font-extrabold ">
            Bienvenido Juan Castañeda
          </p>
-         <button class="p-1 bg-negro dark:bg-blanco text-blanco dark:text-negro  w-32 rounded-sm mt-4">PERFIL</button>
+         <button class="p-1 bg-negro dark:bg-blanco text-blanco hover:bg-azul  transition-colors dark:text-negro  w-32 rounded-sm mt-4">
+            PERFIL
+         </button>
       </div>
-      <div class="grid grid-cols-2 gap-4">
-         <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800 ">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-               <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-               </svg>
-            </p>
+      <div class="grid grid-cols-2 gap-4 ">
+         <div class="flex justify-between p-5 items-center rounded bg-gray-50 h-28 dark:bg-gray-800 ">
+            <div>
+               <p class="text-black dark:text-white font-bold ">Ingresos</p>
+               <h1 class="text-black dark:text-white font-bold sm:text-2xl">$550.000</h1>
+            </div>
+            <div>
+               <i class="fa-solid fa-arrow-trend-up text-green-400 sm:text-2xl"></i>
+            </div>
          </div>
-         <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-               <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-               </svg>
-            </p>
+         <div class="flex justify-between p-5 items-center rounded bg-gray-50 h-28 dark:bg-gray-800 ">
+            <div>
+               <p class="text-black dark:text-white font-bold">Gastos</p>
+               <h1 class="text-black dark:text-white font-bold sm:text-2xl">$100.000</h1>
+            </div>
+            <div>
+               <i class="fa-solid fa-arrow-trend-down text-red-600 sm:text-2xl"></i>
+            </div>
          </div>
-         <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-               <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-               </svg>
-            </p>
+         <div class="flex justify-between p-5 items-center rounded bg-gray-50 h-28 dark:bg-gray-800 ">
+            <div>
+               <p class="text-black dark:text-white font-bold">Balance</p>
+               <h1 class="text-black dark:text-white font-bold sm:text-2xl">$550.000</h1>
+            </div>
+            <div>
+               <i class="fa-solid fa-wallet text-yellow-400 sm:text-2xl"></i>
+            </div>
          </div>
-         <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-               <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-               </svg>
-            </p>
+         <div class="flex justify-between p-5 items-center rounded bg-gray-50 h-28 dark:bg-gray-800 ">
+            <div>
+               <p class="text-black dark:text-white font-bold">Clientes</p>
+               <h1 class="text-black dark:text-white font-bold sm:text-2xl">100</h1>
+            </div>
+            <div>
+               <i class="fa-solid fa-user-group text-azul sm:text-2xl "></i>
+            </div>
          </div>
       </div>
    </div>
-
   </main>
-  
-  
-
-  
-
-  
-
   
   <script src="https://kit.fontawesome.com/4f2c1ef62a.js" crossorigin="anonymous"></script>
   <script src="./js/script.js"></script>
